@@ -1,0 +1,88 @@
+@import url('http://fonts.cdnfonts.com/css/tf2-build');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+:root{
+    --primary-color:rgb(12, 55, 173);
+    --primary-color-darker:rgb(6, 28, 90);
+    --primary-color-flash:rgb(83, 129, 255);
+}
+
+*{
+    box-sizing: border-box;
+    outline: 0;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'TF2 Build', sans-serif;
+    font-size: 1em;
+    line-height: 1.0em;
+}
+.container{
+    max-width: 500px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+form input, form label, form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+form input{
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+form input:focus{
+    outline: 2px solid var(--primary-color);
+}
+form button{
+    border:none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+form button:hover{
+    background: var(--primary-color-darker);
+}
+form button:active{
+    background: var(--primary-color-flash);
+}
+.headerCalc{
+    font-size: 2em;
+    text-align: center;
+}
+.calculadora{
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+.display{ 
+    text-align: right;
+    font-size: 2em;
+    height: 50px;
+    width:400;
+}
+.btn{
+    font-size: 2em;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: rgb(226, 147, 0);
+    cursor: pointer
+}
+.btn-eq{
+    background:orangered;
+}
+.btn:hover{
+    background:rgb(189, 123, 0);
+}
